@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Gardes{% endblock %}
+
+{% block body %}
+    <h1>Create new Gardes</h1>
+
+    {{ include('gardes/_form.html.twig') }}
+
+    <a href="{{ path('app_gardes_index') }}">back to list</a>
+{% endblock %}

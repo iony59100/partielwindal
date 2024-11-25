@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Gardes{% endblock %}
+
+{% block body %}
+    <h1>Edit Gardes</h1>
+
+    {{ include('gardes/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_gardes_index') }}">back to list</a>
+
+    {{ include('gardes/_delete_form.html.twig') }}
+{% endblock %}
